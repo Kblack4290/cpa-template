@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { NavLink } from "./components/navLinkProps";
+import { ConsultButton } from "./components/consultBtnProps";
 
 
 export const NavBar = () => {
@@ -30,25 +32,23 @@ export const NavBar = () => {
 
                     <div className="hidden lg:flex flex-1 items-center justify-center">
                         <div className="flex items-center space-x-4">
-                            <Link href="/services" className="px-3 py-2 text-white  hover:text-zinc-300 transition-colors md:text-sm lg:text-lg ">
+                            <NavLink href="/services">
                                 Services
-                            </Link>
-                            <Link href="/about" className="px-3 py-2 text-white  hover:text-zinc-300 transition-colors md:text-sm lg:text-lg ">
+                            </NavLink>
+                            <NavLink href="/about">
                                 About
-                            </Link>
-                            <Link href="/testimonials" className="px-3 py-2 text-white  hover:text-zinc-300 transition-colors md:text-sm lg:text-lg ">
+                            </NavLink>
+                            <NavLink href="/testimonials">
                                 Testimonials
-                            </Link>
-                            <Link href="/contact" className="px-3 py-2 text-white  hover:text-zinc-300 transition-colors md:text-sm lg:text-lg ">
+                            </NavLink>
+                            <NavLink href="/contact">
                                 Contact
-                            </Link>
+                            </NavLink>
                         </div>
                     </div>
 
                     <div className="hidden lg:flex items-center justify-end">
-                        <Link href="/schedule" className="px-4 py-2 bg-orange-600 text-white rounded-md hover:bg-orange-700 transition-colors">
-                            Schedule a Consultation
-                        </Link>
+                        <ConsultButton />
                     </div>
                     <div className="lg:hidden flex flex-1 items-center justify-end">
                         <button
@@ -65,21 +65,19 @@ export const NavBar = () => {
 
             <div className={`${isMenuOpen ? 'block' : 'hidden'} lg:hidden`}>
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                    <Link href="/services" className="block px-3 py-2 text-white  hover:text-zinc-300 transition-colors">
+                    <NavLink href="/services" isMobile>
                         Services
-                    </Link>
-                    <Link href="/about" className="block px-3 py-2 text-white  hover:text-zinc-300 transition-colors">
+                    </NavLink>
+                    <NavLink href="/about" isMobile>
                         About Me
-                    </Link>
-                    <Link href="/testimonials" className="block px-3 py-2 text-white  hover:text-zinc-300 transition-colors">
+                    </NavLink>
+                    <NavLink href="/testimonials" isMobile>
                         Testimonials
-                    </Link>
-                    <Link href="/contact" className="block px-3 py-2 text-white  hover:text-zinc-300 transition-colors">
+                    </NavLink>
+                    <NavLink href="/contact" isMobile>
                         Contact Me
-                    </Link>
-                    <Link href="/schedule" className="block px-4 py-2 mt-3 text-center bg-orange-600 text-white rounded-md hover:bg-orange-700 transition-colors">
-                        Schedule a Consult
-                    </Link>
+                    </NavLink>
+                    <ConsultButton isMobile />
                 </div>
             </div>
 
