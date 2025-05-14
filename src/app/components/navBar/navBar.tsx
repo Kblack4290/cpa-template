@@ -80,8 +80,6 @@ export const NavBar = () => {
                     <ConsultButton isMobile />
                 </div>
             </div>
-
-
         </nav>
     )
 }
