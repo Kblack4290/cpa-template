@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { NavLink } from "./components/navLinkProps";
-import { ConsultButton } from "./components/consultBtnProps";
+import { ConsultButton } from "../buttons/consultBtnProps";
 
 
 export const NavBar = () => {

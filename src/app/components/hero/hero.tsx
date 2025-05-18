@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ConsultButton } from "../buttons/consultBtnProps";
 
 export const Hero = () => {
 
@@ -33,10 +34,12 @@ export const Hero = () => {
                         <p className="mt-3 md:mt-4 text-base sm:text-lg lg:text-xl text-gray-700">
                             Reliable CPA services tailored for individuals and small businesses.
                         </p>
-                        <div className="mt-8">
-                            <button className="bg-orange-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-md hover:bg-orange-700 transition-colors text-sm sm:text-base">
+                        <div className="mt-6 md:mt-8">
+                            <ConsultButton
+                                className="text-sm sm:text-base md:px-6 md:py-3"
+                            >
                                 Schedule a Free Consultation
-                            </button>
+                            </ConsultButton>
                         </div>
                     </div>
 
