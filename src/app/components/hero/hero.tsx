@@ -1,6 +1,6 @@
-import { HeroBackground } from "./HeroBackground";
-import { HeroContent } from "./HeroContent";
-import { HeroImages } from "./HeroImages";
+import { HeroBackground } from "./heroBackground";
+import { HeroContent } from "./heroContent";
+import { HeroImages } from "./heroImages";
 
 export const Hero = () => {
     return (

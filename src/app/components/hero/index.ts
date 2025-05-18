@@ -1,4 +1,4 @@
 export * from './hero';
-export * from './HeroBackground';
-export * from './HeroContent';
-export * from './HeroImages';
+export * from './heroBackground';
+export * from './heroContent';
+export * from './heroImages';
