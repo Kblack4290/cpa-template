@@ -2,17 +2,27 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "./navLinkProps";
 import { ConsultButton } from "../buttons/consultBtnProps";
 
 
 export const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+    const [hasScrolled, setHasScrolled] = useState<boolean>(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setHasScrolled(window.scrollY > 10);
+        };
+        window.addEventListener('scroll', handleScroll);
+        handleScroll();
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
 
     return (
-        <nav className="bg-teal-500 shadow-lg">
+        <nav className={`sticky top-0 z-50 bg-teal-500 w-full transition-shadow duration-300 ${hasScrolled ? 'shadow-lg' : ''}`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex h-24">
 
