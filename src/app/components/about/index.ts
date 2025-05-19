@@ -1,2 +1,2 @@
-export * from './AboutSection';
-export * from './MeetCPACard';
+export * from './aboutSection';
+export * from './meetCPACard';

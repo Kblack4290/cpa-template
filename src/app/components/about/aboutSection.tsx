@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MeetCPACard } from "./MeetCPACard";
+import { MeetCPACard } from "./meetCPACard";
 
 export const AboutSection = () => {
     return (
