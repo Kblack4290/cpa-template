@@ -5,7 +5,7 @@ import { Services } from "../components/services"
 import { TrustSection } from "../components/trustSection"
 
 
-export const Home = () => {
+export default function HomePage() {
 
     return (
         <>
