@@ -4,15 +4,22 @@ import Image from "next/image";
 type ServiceCardProps = {
     title: string;
     description: string;
-    icon: string;
+    image: string; // Changed from "icon" to "image"
     link: string;
 };
 
-export const ServiceCard = ({ title, description, icon, link }: ServiceCardProps) => {
+export const ServiceCard = ({ title, description, image, link }: ServiceCardProps) => {
     return (
         <div className="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-            <div className="flex items-center justify-center h-16 w-16 rounded-full bg-teal-100 mb-4 mx-auto">
-                <Image src={icon} alt={title} width={32} height={32} />
+            {/* Replaced the icon container with an image container */}
+            <div className="h-48 w-full rounded-lg overflow-hidden mb-4 relative">
+                <Image
+                    src={image}
+                    alt={title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover"
+                />
             </div>
             <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">{title}</h3>
             <p className="text-gray-600 mb-6 text-center">{description}</p>

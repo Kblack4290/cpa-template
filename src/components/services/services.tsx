@@ -5,37 +5,37 @@ const services = [
     {
         title: "Tax Preparation",
         description: "Comprehensive tax return preparation for individuals and businesses with maximum deductions.",
-        icon: "/icons/tax-preparation.svg",
+        image: "/olga-delawrence-5616whx5NdQ-unsplash.jpg",
         link: "/services/tax-preparation"
     },
     {
         title: "Tax Planning",
         description: "Strategic planning to minimize tax liability and prepare for future financial decisions.",
-        icon: "/icons/tax-planning.svg",
+        image: "/brett-jordan-cBY2CtqQ6YI-unsplash.jpg",
         link: "/services/tax-planning"
     },
     {
         title: "Bookkeeping",
         description: "Accurate financial record-keeping services to keep your business organized and compliant.",
-        icon: "/icons/bookkeeping.svg",
+        image: "/fin-0rHxkbcvQAE-unsplash.jpg",
         link: "/services/bookkeeping"
     },
     {
         title: "Financial Advisory",
         description: "Expert financial guidance to help you make informed decisions for your future.",
-        icon: "/icons/financial-advisory.svg",
+        image: "/jen-titus-gYaXHmxvwr0-unsplash.jpg",
         link: "/services/financial-advisory"
     },
     {
         title: "IRS Representation",
         description: "Professional representation in IRS matters including audits, appeals, and collections.",
-        icon: "/icons/irs-representation.svg",
+        image: "/luis-caroca-h_YX8re2Uu4-unsplash.jpg",
         link: "/services/irs-representation"
     },
     {
         title: "Business Formation",
         description: "Guidance on selecting and establishing the right business structure for your company.",
-        icon: "/icons/business-formation.svg",
+        image: "/imagine-buddy-FDaCU3etvAc-unsplash.jpg",
         link: "/services/business-formation"
     }
 ];
@@ -52,7 +52,7 @@ export const Services = () => {
                             key={index}
                             title={service.title}
                             description={service.description}
-                            icon={service.icon}
+                            image={service.image}
                             link={service.link}
                         />
                     ))}

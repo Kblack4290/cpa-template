@@ -8,7 +8,7 @@ export const MeetCPACard = () => {
                 <div className="md:w-1/3">
                     <div className="h-72 md:h-full relative">
                         <Image
-                            src="/cpa-portrait.jpg"
+                            src="/gulnar-mardanova-F3HTyBW2k3k-unsplash.jpg"
                             alt="Sarah Johnson, CPA"
                             fill
                             className="object-cover"
@@ -16,7 +16,6 @@ export const MeetCPACard = () => {
                     </div>
                 </div>
 
-                {/* CPA Info */}
                 <div className="p-8 md:w-2/3 flex flex-col justify-center">
                     <div className="uppercase tracking-wide text-sm text-teal-500 font-semibold">Certified Public Accountant</div>
                     <h3 className="mt-2 text-2xl font-bold text-gray-900">Sarah Johnson</h3>
