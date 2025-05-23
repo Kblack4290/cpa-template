@@ -1,7 +1,7 @@
 import { ServiceHeader } from "./servicesHeader";
 import { ServiceCard } from "./servicesCard";
 
-const services = [
+export const services = [
     {
         title: "Tax Preparation",
         description: "Comprehensive tax return preparation for individuals and businesses with maximum deductions.",

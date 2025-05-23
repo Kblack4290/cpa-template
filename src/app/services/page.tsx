@@ -1,6 +1,9 @@
-export default function ServicesPage() {
+import { ServicesList } from "@/components/services/servicesList";
 
+export default function ServicesPage() {
     return (
-        <h1>SERVICES!!!</h1>
-    )
+        <main>
+            <ServicesList />
+        </main>
+    );
 }
