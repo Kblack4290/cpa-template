@@ -4,8 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { NavLink } from "./navLinkProps";
+import { NavDropdown } from "./navDropdown";
 import { ConsultButton } from "../buttons/consultBtnProps";
-
+import { services } from "../services/servicesData";
 
 export const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -20,12 +21,10 @@ export const NavBar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-
     return (
         <nav className={`sticky top-0 z-50 bg-teal-500 w-full transition-shadow duration-300 ${hasScrolled ? 'shadow-lg' : ''}`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex h-24">
-
                     <div className="flex-shrink-0 flex items-center">
                         <Link href="/" className="flex items-center">
                             <div className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 relative">
@@ -42,9 +41,12 @@ export const NavBar = () => {
 
                     <div className="hidden lg:flex flex-1 items-center justify-center">
                         <div className="flex items-center space-x-4">
-                            <NavLink href="/services">
-                                Services
-                            </NavLink>
+                            {/* Replace NavLink with NavDropdown for Services */}
+                            <NavDropdown
+                                title="Services"
+                                href="/services"
+                                services={services}
+                            />
                             <NavLink href="/about">
                                 About
                             </NavLink>
@@ -75,9 +77,13 @@ export const NavBar = () => {
 
             <div className={`${isMenuOpen ? 'block' : 'hidden'} lg:hidden`}>
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                    <NavLink href="/services" isMobile>
-                        Services
-                    </NavLink>
+                    {/* Mobile menu with dropdown */}
+                    <NavDropdown
+                        title="Services"
+                        href="/services"
+                        services={services}
+                        isMobile={true}
+                    />
                     <NavLink href="/about" isMobile>
                         About Me
                     </NavLink>

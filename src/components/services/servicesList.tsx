@@ -1,5 +1,5 @@
 import { HorizontalServiceCard } from "./horizontalServicesCard";
-import { services } from "./services";
+import { services } from "./servicesData";
 
 export const ServicesList = () => {
     return (
