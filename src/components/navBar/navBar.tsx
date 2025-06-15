@@ -41,7 +41,6 @@ export const NavBar = () => {
 
                     <div className="hidden lg:flex flex-1 items-center justify-center">
                         <div className="flex items-center space-x-4">
-                            {/* Replace NavLink with NavDropdown for Services */}
                             <NavDropdown
                                 title="Services"
                                 href="/services"
@@ -77,7 +76,6 @@ export const NavBar = () => {
 
             <div className={`${isMenuOpen ? 'block' : 'hidden'} lg:hidden`}>
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                    {/* Mobile menu with dropdown */}
                     <NavDropdown
                         title="Services"
                         href="/services"
