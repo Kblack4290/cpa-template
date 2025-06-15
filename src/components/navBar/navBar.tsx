@@ -29,7 +29,7 @@ export const NavBar = () => {
                         <Link href="/" className="flex items-center">
                             <div className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 relative">
                                 <Image
-                                    src="logoipsum-225.svg"
+                                    src="/logoipsum-225.svg"
                                     alt="Place Holder Logo"
                                     fill
                                     className="object-contain"
