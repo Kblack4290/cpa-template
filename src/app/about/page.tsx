@@ -9,7 +9,7 @@ export const metadata = {
 export default function About() {
     return (
         <main>
-            <section className="relative h-80">
+            <section className="relative h-120">
                 <div className="absolute inset-0">
                     <Image
                         src="/images/cityImage.jpg"
