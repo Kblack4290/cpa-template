@@ -11,7 +11,7 @@ export const HeroContent = () => {
             </p>
             <div className="mt-6 md:mt-8">
                 <ConsultButton
-                    className="text-sm sm:text-base md:px-6 md:py-3"
+                    className="text-sm text-white sm:text-base md:px-6 md:py-3"
                 >
                     Schedule a Free Consultation
                 </ConsultButton>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { ConsultButton } from "@/components/buttons/consultBtnProps";
 
 export const metadata = {
     title: "Client Testimonials | Prime Tax Solutions",
@@ -192,12 +192,11 @@ export default function Testimonials() {
                     <p className="text-xl text-white max-w-2xl mx-auto mb-8">
                         Experience the difference that personalized tax and accounting services can make for your financial success.
                     </p>
-                    <Link
-                        href="/contact"
+                    <ConsultButton
                         className="inline-block bg-white text-teal-600 hover:bg-gray-100 py-3 px-8 rounded-md text-lg font-medium transition-colors"
                     >
                         Schedule Your Consultation
-                    </Link>
+                    </ConsultButton>
                 </div>
             </section>
         </main>

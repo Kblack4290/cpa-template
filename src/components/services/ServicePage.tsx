@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import { ServiceData } from "./servicesData";
+import { ConsultButton } from "../buttons/consultBtnProps";
 
 type ServicePageProps = {
     service: ServiceData;
@@ -80,12 +80,11 @@ export const ServicePage = ({ service }: ServicePageProps) => {
                     </div>
 
                     <div className="text-center">
-                        <Link
-                            href="/contact"
+                        <ConsultButton
                             className="bg-teal-600 hover:bg-teal-700 text-white py-3 px-8 rounded-md text-lg font-medium transition-colors"
                         >
                             {service.ctaText}
-                        </Link>
+                        </ConsultButton>
                     </div>
                 </div>
             </section>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ConsultButton } from "@/components/buttons/consultBtnProps";
 
 export const metadata = {
     title: "About Us | Prime Tax Solutions",
@@ -229,12 +230,11 @@ export default function About() {
                             Let&apos;s discuss how our experienced team can help you achieve your financial goals with tailored tax and accounting solutions.
                         </p>
                         <div className="flex flex-col sm:flex-row justify-center gap-4">
-                            <Link
-                                href="/contact"
+                            <ConsultButton
                                 className="bg-teal-600 hover:bg-teal-700 text-white py-3 px-8 rounded-md text-lg font-medium transition-colors"
                             >
                                 Schedule a Consultation
-                            </Link>
+                            </ConsultButton>
                             <Link
                                 href="/services"
                                 className="bg-white border-2 border-teal-600 text-teal-600 hover:bg-teal-50 py-3 px-8 rounded-md text-lg font-medium transition-colors"
