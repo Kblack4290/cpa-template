@@ -30,10 +30,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NavBar />
-        {children}
-        <SpeedInsights />
-        <Analytics />
+        <div id="root-calendly-modal">
+          <NavBar />
+          {children}
+          <SpeedInsights />
+          <Analytics />
+        </div>
       </body>
     </html>
   );
