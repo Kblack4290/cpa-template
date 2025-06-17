@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const HeroImages = () => {
     return (
-        <div className="relative w-full md:w-1/2 mt-12 md:mt-0 h-64 lg:h-80 xl:4h-100">
+        <div className="hidden md:block relative w-full md:w-1/2 mt-12 md:mt-0 h-64 lg:h-80 xl:4h-100">
             <div className="w-full h-full rounded-lg overflow-hidden shadow-xl 
                         md:absolute md:right-0 md:bottom-20 md:w-19/20 md:h-19/20 md:rotate-2 md:z-10">
                 <Image

@@ -8,7 +8,7 @@ export const MeetCPACard = () => {
                 <div className="md:w-1/3">
                     <div className="h-72 md:h-full relative">
                         <Image
-                            src="/gulnar-mardanova-F3HTyBW2k3k-unsplash.jpg"
+                            src="/images/gulnar-mardanova-F3HTyBW2k3k-unsplash.jpg"
                             alt="Sarah Johnson, CPA"
                             fill
                             className="object-cover"

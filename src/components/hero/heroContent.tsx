@@ -2,7 +2,7 @@ import { ConsultButton } from "../buttons/consultBtnProps";
 
 export const HeroContent = () => {
     return (
-        <div className="w-full md:w-1/2 lg:w-5/12 mb-12 md:mb-0">
+        <div className="w-full md:w-1/2 lg:w-5/12 mb-12 md:mb-0 text-center md:text-left">
             <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900">
                 Maximize Your Tax Savings With Confidence
             </h1>
