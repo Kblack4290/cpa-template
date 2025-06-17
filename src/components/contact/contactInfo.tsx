@@ -4,7 +4,6 @@ export const ContactInfo = () => {
             <h3 className="text-xl font-semibold mb-4 text-gray-900">Contact Information</h3>
 
             <div className="space-y-4">
-                {/* Phone */}
                 <div className="flex items-start">
                     <div className="bg-teal-100 rounded-full p-2 mr-4">
                         <svg className="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -18,7 +17,6 @@ export const ContactInfo = () => {
                     </div>
                 </div>
 
-                {/* Address */}
                 <div className="flex items-start">
                     <div className="bg-teal-100 rounded-full p-2 mr-4">
                         <svg className="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +32,6 @@ export const ContactInfo = () => {
                     </div>
                 </div>
 
-                {/* Email */}
                 <div className="flex items-start">
                     <div className="bg-teal-100 rounded-full p-2 mr-4">
                         <svg className="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

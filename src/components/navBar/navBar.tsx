@@ -7,6 +7,7 @@ import { NavLink } from "./navLinkProps";
 import { NavDropdown } from "./navDropdown";
 import { ConsultButton } from "../buttons/consultBtnProps";
 import { services } from "../services/servicesData";
+import { ScrollLink } from "./scrollLink";
 
 export const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -52,9 +53,9 @@ export const NavBar = () => {
                             <NavLink href="/testimonials">
                                 Testimonials
                             </NavLink>
-                            <NavLink href="/contact">
+                            <ScrollLink href="/#contact" targetId="contact">
                                 Contact
-                            </NavLink>
+                            </ScrollLink>
                         </div>
                     </div>
 
@@ -88,9 +89,9 @@ export const NavBar = () => {
                     <NavLink href="/testimonials" isMobile>
                         Testimonials
                     </NavLink>
-                    <NavLink href="/contact" isMobile>
-                        Contact Me
-                    </NavLink>
+                    <ScrollLink href="/#contact" targetId="contact">
+                        Contact
+                    </ScrollLink>
                     <ConsultButton isMobile />
                 </div>
             </div>

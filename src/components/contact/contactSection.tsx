@@ -15,13 +15,11 @@ export const ContactSection = () => {
                 </div>
 
                 <div className="flex flex-col lg:flex-row gap-8">
-                    {/* Contact Info and Map */}
                     <div className="lg:w-1/2 space-y-8">
                         <ContactInfo />
                         <GoogleMap />
                     </div>
 
-                    {/* Contact Form */}
                     <div className="lg:w-1/2">
                         <ContactForm />
                     </div>

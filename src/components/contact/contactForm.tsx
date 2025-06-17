@@ -70,7 +70,7 @@ export const ContactForm = () => {
     };
 
     return (
-        <div className="bg-white rounded-lg shadow-lg p-6">
+        <div className="bg-white rounded-lg shadow-lg p-6" id="contact">
             <h3 className="text-xl font-semibold mb-4 text-gray-900">Send Us a Message</h3>
 
             {submitStatus === "success" && (
